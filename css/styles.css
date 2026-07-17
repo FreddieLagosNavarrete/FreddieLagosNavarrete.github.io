@@ -23,8 +23,9 @@ img{display:block;max-width:100%}
 .mobile-toggle{display:none}
 .hero{min-height:850px;display:grid;align-items:end;position:relative;padding-top:76px;overflow:hidden}
 .hero-bg{position:absolute;inset:0;background:
-linear-gradient(90deg,rgba(2,7,13,.98) 0%,rgba(2,7,13,.75) 38%,rgba(2,7,13,.18) 70%),
-url("../assets/img/condor-hero.svg") center/cover no-repeat}
+linear-gradient(90deg,rgba(2,7,13,.99) 0%,rgba(2,7,13,.90) 28%,rgba(2,7,13,.48) 50%,rgba(2,7,13,.08) 76%),
+linear-gradient(0deg,rgba(2,7,13,.78),transparent 46%),
+url("../assets/img/patagonia-condor-realista.jpg") 64% center/cover no-repeat}
 .hero::after{content:"";position:absolute;inset:auto 0 0;height:180px;background:linear-gradient(transparent,var(--bg))}
 .flag{position:absolute;left:4%;top:120px;width:190px;z-index:2;filter:drop-shadow(0 18px 22px rgba(0,0,0,.35));animation:float 6s ease-in-out infinite}
 .hero-content{position:relative;z-index:3;padding:170px 0 130px;max-width:680px}
@@ -40,7 +41,7 @@ section{padding:100px 0}
 .section-title{display:flex;justify-content:space-between;align-items:end;margin-bottom:36px;gap:20px}
 .section-title h2{font-size:40px;margin:0}.section-title p{margin:0;color:var(--muted);max-width:560px}
 .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:28px}
-.about-visual{min-height:520px;border-radius:22px;background:url("../assets/img/patagonia.svg") center/cover;border:1px solid var(--line);position:relative;overflow:hidden;box-shadow:var(--shadow)}
+.about-visual{min-height:520px;border-radius:22px;background:url("../assets/img/patagonia-realista.jpg") center/cover;border:1px solid var(--line);position:relative;overflow:hidden;box-shadow:var(--shadow)}
 .about-visual::after{content:"Chile · Patagonia";position:absolute;left:24px;bottom:20px;padding:8px 12px;border-radius:999px;background:rgba(2,7,13,.75);border:1px solid var(--line);font-size:12px}
 .cards{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .card{background:linear-gradient(180deg,rgba(11,22,36,.92),rgba(5,13,22,.92));border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 18px 50px rgba(0,0,0,.18);transition:.25s}
@@ -56,8 +57,8 @@ section{padding:100px 0}
 .project{overflow:hidden;padding:0}.project-media{height:190px;background-size:cover;background-position:center}.project-body{padding:22px}.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.tag{font-size:11px;padding:6px 9px;border-radius:999px;border:1px solid rgba(64,175,255,.35);color:var(--blue2)}
 .cert{display:grid;grid-template-columns:1.1fr .9fr;gap:22px}.mit{min-height:290px;background:
 linear-gradient(90deg,rgba(5,11,18,.95),rgba(5,11,18,.5)),
-url("../assets/img/patagonia.svg") center/cover}
-.contact{background:linear-gradient(90deg,rgba(1,8,14,.96),rgba(5,19,32,.78)),url("../assets/img/patagonia.svg") center/cover;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+url("../assets/img/patagonia-realista.jpg") center/cover}
+.contact{background:linear-gradient(90deg,rgba(1,8,14,.96),rgba(5,19,32,.78)),url("../assets/img/patagonia-realista.jpg") center/cover;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .contact-inner{display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center}
 .contact-list{display:grid;gap:12px}.contact-item{padding:14px 16px;border-radius:12px;background:rgba(2,8,15,.68);border:1px solid var(--line)}
 footer{padding:30px 0;color:var(--muted);text-align:center}
@@ -73,4 +74,16 @@ footer{padding:30px 0;color:var(--muted);text-align:center}
   h1{font-size:46px}.lead{font-size:17px}.hero-cta{flex-direction:column;align-items:flex-start}.stats{grid-template-columns:1fr 1fr}
   section{padding:72px 0}.section-title{align-items:flex-start;flex-direction:column}.section-title h2{font-size:32px}
   .cards,.projects{grid-template-columns:1fr}.job-head{flex-direction:column}.hero{min-height:920px}
+}
+
+/* Corrección visual realista */
+.hero{min-height:820px}
+.hero-content{max-width:620px}
+.flag{width:112px;top:135px;left:max(4%,calc((100vw - 1180px)/2));opacity:.96}
+.hero .lead{max-width:590px;text-shadow:0 2px 18px rgba(0,0,0,.75)}
+.hero h1{text-shadow:0 8px 34px rgba(0,0,0,.55)}
+.hero-bg::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 69% 36%,transparent 0 23%,rgba(2,7,13,.08) 42%,rgba(2,7,13,.45) 100%);pointer-events:none}
+@media(max-width:900px){
+  .hero-bg{background-position:68% center}
+  .flag{left:6%;top:118px;width:92px}
 }

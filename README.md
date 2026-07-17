@@ -16,3 +16,7 @@ El archivo principal debe quedar en la raíz del repositorio:
 - `css/styles.css`
 - `js/main.js`
 - `assets/...`
+
+
+## Versión corregida
+Incluye fondo realista de cóndor andino y Patagonia chilena; reemplaza el dibujo SVG anterior.
