@@ -1,19 +1,14 @@
-# Portafolio Freddie Lagos — versión fotorealista
+# Portafolio Freddie Lagos — versión real y limpia
 
-Sitio estático listo para GitHub Pages.
+Esta versión elimina por completo las imágenes generadas a partir de capturas de una maqueta.
+Todas las fotografías del sitio son imágenes reales de Chile obtenidas desde Wikimedia Commons.
 
-Incluye imágenes fotorealistas de:
-- Cóndor andino
-- Patagonia chilena
-- Glaciares
-- Cielo nocturno
-- Tecnología, Machine Learning y Business Intelligence
-- Certificación MIT
-- Fondo de contacto con paisaje patagónico
-
-## Publicación
+## Cómo publicar
 
 1. Descomprime el ZIP.
-2. Sube todos los archivos directamente a la raíz del repositorio `FreddieLagosNavarrete.github.io`.
+2. Sube **todos los archivos y carpetas** directamente a la raíz de `FreddieLagosNavarrete.github.io`.
 3. Verifica que `index.html` quede en la raíz.
-4. En GitHub: Settings > Pages > Deploy from a branch > main > /(root).
+4. En GitHub Pages usa `main` y `/(root)`.
+5. Espera el despliegue y actualiza con Ctrl+F5 para evitar la caché.
+
+Los créditos y licencias están incluidos en `creditos.html`.

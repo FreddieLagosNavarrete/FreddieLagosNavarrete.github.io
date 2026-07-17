@@ -1,131 +1,313 @@
 <!doctype html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Portafolio profesional de Freddie Lagos Navarrete, Ingeniero de Software especializado en desarrollo, datos, machine learning e inteligencia de negocios.">
-<meta name="theme-color" content="#030810">
-<title>Freddie Lagos | Ingeniería de Software y Datos</title>
-<link rel="preload" as="image" href="assets/img/hero-patagonia-condor.jpg">
-<link rel="stylesheet" href="css/styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Portafolio profesional de Freddie Lagos Navarrete, Ingeniero de Software especializado en desarrollo, datos, inteligencia de negocios y machine learning.">
+  <meta name="theme-color" content="#030810">
+  <title>Freddie Lagos | Software, Datos e IA</title>
+  <link rel="preload" as="image" href="assets/img/hero-condor.jpg">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<nav class="nav">
-  <div class="container nav-inner">
-    <a class="brand" href="#inicio">
-      <span class="brand-mark">FL</span>
-      <span>FREDDIE LAGOS<small>Ingeniero de Ejecución en Informática</small></span>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="#inicio" aria-label="Inicio">
+      <span class="brand-icon">FL</span>
+      <span class="brand-text">
+        <strong>Freddie Lagos</strong>
+        <small>Ingeniero de Ejecución en Informática</small>
+      </span>
     </a>
-    <div class="nav-links">
-      <a href="#inicio">Inicio</a><a href="#sobre-mi">Sobre mí</a><a href="#experiencia">Experiencia</a>
-      <a href="#habilidades">Habilidades</a><a href="#proyectos">Proyectos</a><a href="#contacto">Contacto</a>
-    </div>
-    <div class="nav-actions">
-      <button class="btn mobile-toggle" aria-label="Abrir menú">☰</button>
-      <a class="btn btn-primary" href="assets/CV-Freddie-Lagos.pdf" download>Descargar CV ↓</a>
-    </div>
-  </div>
-</nav>
 
-<header class="hero" id="inicio">
-  <div class="hero-bg"></div>
-  <img class="flag" src="assets/img/chile-flag.svg" alt="Bandera de Chile">
-  <div class="container">
-    <div class="hero-content">
-      <div class="kicker">Desarrollo · Datos · Inteligencia Artificial</div>
-      <h1>Tecnología<br><span>con propósito</span></h1>
-      <p class="lead">Ingeniero de software con experiencia construyendo soluciones web, móviles y analíticas que convierten datos en decisiones e impacto real.</p>
-      <div class="hero-cta">
-        <a class="btn btn-primary" href="#proyectos">Ver mi trabajo →</a>
-        <a class="btn" href="#contacto">Conversemos</a>
-      </div>
-      <div class="stats">
-        <div class="stat"><strong>18+</strong><span>Años de experiencia</span></div>
-        <div class="stat"><strong>30+</strong><span>Proyectos tecnológicos</span></div>
-        <div class="stat"><strong>15+</strong><span>Tecnologías dominadas</span></div>
-        <div class="stat"><strong>100%</strong><span>Compromiso profesional</span></div>
-      </div>
-    </div>
+    <button class="menu-button" type="button" aria-label="Abrir menú" aria-expanded="false">☰</button>
+
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#perfil">Sobre mí</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <a class="button button-primary nav-cv" href="assets/CV-Freddie-Lagos.pdf" download>
+      Descargar CV <span aria-hidden="true">↓</span>
+    </a>
   </div>
 </header>
 
 <main>
-<section id="sobre-mi">
-  <div class="container">
-    <div class="section-title reveal"><div><div class="kicker">Sobre mí</div><h2>Pasión por la tecnología y los datos</h2></div><p>Formación avanzada en Ingeniería de Software, Ciencia e Ingeniería de Datos, Inteligencia de Negocios y Estadística.</p></div>
-    <div class="grid-2">
-      <div class="about-visual reveal"></div>
-      <div class="cards">
-        <article class="card reveal"><div class="card-icon">⌘</div><h3>Desarrollo de Software</h3><p>Sistemas web y móviles escalables, seguros y centrados en las necesidades de las personas.</p></article>
-        <article class="card reveal"><div class="card-icon">◫</div><h3>Ciencia de Datos</h3><p>Transformo información en conocimiento útil para la toma de decisiones.</p></article>
-        <article class="card reveal"><div class="card-icon">◉</div><h3>Machine Learning</h3><p>Modelos de clasificación y automatización aplicados a problemas reales.</p></article>
-        <article class="card reveal"><div class="card-icon">◎</div><h3>Liderazgo</h3><p>Levantamiento de requerimientos, dirección técnica y entrega de soluciones de calidad.</p></article>
+  <section class="hero" id="inicio">
+    <div class="hero-overlay"></div>
+    <div class="container hero-inner">
+      <div class="hero-copy reveal">
+        <div class="country-label">
+          <img src="assets/img/chile.svg" alt="Bandera de Chile">
+          <span>Santiago, Chile</span>
+        </div>
+
+        <p class="eyebrow">DESARROLLO · DATOS · INTELIGENCIA ARTIFICIAL</p>
+        <h1>Tecnología<br><span>con propósito</span></h1>
+        <p class="hero-lead">
+          Diseño y construyo soluciones web, móviles y analíticas que convierten
+          información compleja en herramientas claras para personas y organizaciones.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#proyectos">Ver mi trabajo →</a>
+          <a class="button button-secondary" href="#contacto">Conversemos</a>
+        </div>
+
+        <div class="hero-facts" aria-label="Resumen profesional">
+          <div><strong>18+</strong><span>Años de experiencia</span></div>
+          <div><strong>2007</strong><span>Inicio profesional</span></div>
+          <div><strong>4</strong><span>Instituciones destacadas</span></div>
+          <div><strong>A2</strong><span>Inglés MCER</span></div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="experiencia">
-  <div class="container">
-    <div class="section-title reveal"><div><div class="kicker">Trayectoria</div><h2>Experiencia profesional</h2></div><p>Más de una década liderando y construyendo soluciones para instituciones públicas, académicas y privadas.</p></div>
-    <div class="timeline">
-      <article class="job reveal"><div class="job-head"><div><h3>Pontificia Universidad Católica de Chile · Centro de Encuestas UC</h3><small>Ingeniero de Software</small></div><strong>2018 · Actualidad</strong></div><p>Diseño, construcción e implementación de sistemas web y móviles para encuestas sociales; soluciones para proyectos CASEN, EPS, ELPI, SIMCE y PISA; modelos de clasificación con machine learning.</p></article>
-      <article class="job reveal"><div class="job-head"><div><h3>Universidad de Chile · Centro Microdatos</h3><small>Ingeniero de Software</small></div><strong>2011 · 2017</strong></div><p>Desarrollo de plataformas para levantamientos sociales y educacionales, aplicaciones Android y herramientas de apoyo para operación en terreno.</p></article>
-      <article class="job reveal"><div class="job-head"><div><h3>ChileCompra</h3><small>Integrador de Configuraciones · Analista Programador</small></div><strong>2008 · 2011</strong></div><p>Integración de releases, resolución de problemas complejos de programación, desarrollo de portales y servicios para Mercado Público.</p></article>
-      <article class="job reveal"><div class="job-head"><div><h3>Sky Airline</h3><small>Analista Programador</small></div><strong>2007 · 2008</strong></div><p>Desarrollo de sistemas de control de vuelos, convenios empresas, ticket electrónico y módulos internos de venta y caja.</p></article>
-    </div>
-  </div>
-</section>
+  <section class="section" id="perfil">
+    <div class="container">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow">SOBRE MÍ</p>
+          <h2>Experiencia técnica con visión de datos</h2>
+        </div>
+        <p>
+          Formación avanzada en Ingeniería de Software, Ciencia e Ingeniería de Datos,
+          Inteligencia de Negocios y Estadística.
+        </p>
+      </div>
 
-<section id="habilidades">
-  <div class="container">
-    <div class="section-title reveal"><div><div class="kicker">Stack tecnológico</div><h2>Habilidades y tecnologías</h2></div><p>Experiencia en desarrollo, bases de datos, analítica y plataformas empresariales.</p></div>
-    <div class="card reveal">
-      <h3>Lenguajes y frameworks</h3>
-      <div class="skills"><span class="skill">C# / .NET</span><span class="skill">Java</span><span class="skill">Python</span><span class="skill">JavaScript</span><span class="skill">React</span><span class="skill">Angular</span><span class="skill">PHP</span><span class="skill">C++</span><span class="skill">Visual Basic</span><span class="skill">Android</span></div>
-      <h3>Bases de datos</h3>
-      <div class="skills"><span class="skill">SQL Server</span><span class="skill">MySQL</span><span class="skill">Oracle</span><span class="skill">PostgreSQL</span><span class="skill">MongoDB</span><span class="skill">SQLite</span></div>
-      <h3>Datos y herramientas</h3>
-      <div class="skills"><span class="skill">Machine Learning</span><span class="skill">Business Intelligence</span><span class="skill">Estadística</span><span class="skill">Git</span><span class="skill">Docker</span><span class="skill">Azure</span><span class="skill">Power BI</span></div>
-    </div>
-  </div>
-</section>
+      <div class="profile-grid">
+        <figure class="real-photo reveal">
+          <img src="assets/img/torres-del-paine.jpg" alt="Paisaje real de Torres del Paine, Patagonia chilena">
+          <figcaption>Patagonia chilena · Torres del Paine</figcaption>
+        </figure>
 
-<section id="proyectos">
-  <div class="container">
-    <div class="section-title reveal"><div><div class="kicker">Trabajo destacado</div><h2>Proyectos</h2></div><p>Ejemplos de soluciones construidas para captura, procesamiento y análisis de información.</p></div>
-    <div class="projects">
-      <article class="project card reveal"><div class="project-media" style="background-image:url('assets/img/proyecto-encuestas.jpg')"></div><div class="project-body"><h3>Plataformas de Encuestas Sociales</h3><p>Sistemas integrales para levantamiento de datos en terreno, seguimiento operativo y visualización de resultados.</p><div class="tags"><span class="tag">.NET</span><span class="tag">SQL Server</span><span class="tag">Android</span></div></div></article>
-      <article class="project card reveal"><div class="project-media" style="background-image:url('assets/img/proyecto-ml.jpg')"></div><div class="project-body"><h3>Clasificación Automática</h3><p>Modelos de machine learning para apoyar procesos de codificación y clasificación de respuestas de encuestas.</p><div class="tags"><span class="tag">Python</span><span class="tag">ML</span><span class="tag">Scikit-learn</span></div></div></article>
-      <article class="project card reveal"><div class="project-media" style="background-image:url('assets/img/proyecto-bi.jpg')"></div><div class="project-body"><h3>Inteligencia de Negocios</h3><p>Dashboards, indicadores y reportes para transformar datos operacionales en decisiones estratégicas.</p><div class="tags"><span class="tag">Power BI</span><span class="tag">SQL</span><span class="tag">ETL</span></div></div></article>
+        <div class="expertise-grid">
+          <article class="feature-card reveal">
+            <span class="feature-icon">&lt;/&gt;</span>
+            <h3>Desarrollo de software</h3>
+            <p>Sistemas web y móviles orientados a operación, seguridad y experiencia de usuario.</p>
+          </article>
+          <article class="feature-card reveal">
+            <span class="feature-icon">DB</span>
+            <h3>Ciencia de datos</h3>
+            <p>Preparación, análisis y transformación de datos para decisiones informadas.</p>
+          </article>
+          <article class="feature-card reveal">
+            <span class="feature-icon">ML</span>
+            <h3>Machine Learning</h3>
+            <p>Modelos de clasificación y automatización aplicados a procesos reales.</p>
+          </article>
+          <article class="feature-card reveal">
+            <span class="feature-icon">↗</span>
+            <h3>Liderazgo técnico</h3>
+            <p>Levantamiento de requerimientos, coordinación de proyectos y mejora continua.</p>
+          </article>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section>
-  <div class="container">
-    <div class="section-title reveal"><div><div class="kicker">Formación</div><h2>Educación y certificaciones</h2></div></div>
-    <div class="cert">
-      <article class="card mit reveal"><h3>Machine Learning: Tecnología en la toma de Decisiones</h3><p>MIT Professional Education · 2023</p></article>
-      <article class="card reveal"><h3>Formación académica</h3><p>Diplomado en Estadística · Pontificia Universidad Católica de Chile</p><p>Postítulo de Ciencia e Ingeniería de Datos · Universidad de Chile</p><p>Postítulo en Ingeniería de Software · Universidad de Chile</p><p>Diplomado en Inteligencia de Negocios · Universidad de Chile</p><p>Ingeniería de Ejecución en Informática</p></article>
-    </div>
-  </div>
-</section>
+  <section class="section section-alt" id="experiencia">
+    <div class="container">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow">TRAYECTORIA</p>
+          <h2>Experiencia profesional</h2>
+        </div>
+        <p>Soluciones tecnológicas para investigación social, educación, servicios públicos y transporte.</p>
+      </div>
 
-<section class="contact" id="contacto">
-  <div class="container contact-inner">
-    <div class="reveal"><div class="kicker">Contacto</div><h2>¿Tienes un proyecto en mente?</h2><p class="lead">Hablemos sobre cómo convertir una necesidad tecnológica en una solución clara, segura y útil.</p><a class="btn btn-primary" href="mailto:Freddie.lagos@gmail.com">Escríbeme →</a></div>
-    <div class="contact-list reveal">
-      <div class="contact-item">✉ Freddie.lagos@gmail.com</div>
-      <div class="contact-item">☎ +56 9 6616 0057</div>
-      <div class="contact-item">⌖ Santiago, Chile</div>
-      <div class="contact-item">LinkedIn: onx.la/ef815</div>
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <div class="timeline-date">2018 — Actualidad</div>
+          <div>
+            <h3>Pontificia Universidad Católica de Chile · Centro de Encuestas UC</h3>
+            <p class="role">Ingeniero de Software</p>
+            <p>Sistemas web y móviles para levantamiento de encuestas sociales, herramientas para proyectos como CASEN, EPS y ELPI, y modelos de clasificación con machine learning.</p>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-date">2011 — 2017</div>
+          <div>
+            <h3>Universidad de Chile · Centro Microdatos</h3>
+            <p class="role">Ingeniero de Software</p>
+            <p>Plataformas para encuestas sociales y educacionales, aplicaciones Android y herramientas de apoyo para operación en terreno.</p>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-date">2008 — 2011</div>
+          <div>
+            <h3>ChileCompra</h3>
+            <p class="role">Integrador de Configuraciones · Analista/Programador</p>
+            <p>Gestión de releases, integración de servicios, desarrollo de portales y resolución de problemas de programación y arquitectura.</p>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-date">2007 — 2008</div>
+          <div>
+            <h3>Sky Airline</h3>
+            <p class="role">Analista/Programador</p>
+            <p>Sistemas de control de vuelos, convenios empresas, ticket electrónico y módulos internos de ventas y caja.</p>
+          </div>
+        </article>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <section class="section" id="habilidades">
+    <div class="container">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow">STACK TECNOLÓGICO</p>
+          <h2>Habilidades y herramientas</h2>
+        </div>
+        <p>Tecnologías utilizadas en proyectos empresariales, académicos y de levantamiento de información.</p>
+      </div>
+
+      <div class="skills-layout">
+        <article class="skills-card reveal">
+          <h3>Lenguajes y frameworks</h3>
+          <div class="chips">
+            <span>C# / .NET</span><span>Java</span><span>Python</span><span>JavaScript</span>
+            <span>React</span><span>Angular</span><span>PHP</span><span>C++</span>
+            <span>Visual Basic</span><span>Android</span>
+          </div>
+        </article>
+
+        <article class="skills-card reveal">
+          <h3>Bases de datos</h3>
+          <div class="chips">
+            <span>SQL Server</span><span>MySQL</span><span>Oracle</span>
+            <span>PostgreSQL</span><span>MongoDB</span><span>SQLite</span>
+          </div>
+        </article>
+
+        <article class="skills-card reveal">
+          <h3>Datos y plataformas</h3>
+          <div class="chips">
+            <span>Machine Learning</span><span>Business Intelligence</span><span>Estadística</span>
+            <span>Git</span><span>Docker</span><span>Azure</span><span>Power BI</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="proyectos">
+    <div class="container">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow">PROYECTOS DESTACADOS</p>
+          <h2>Soluciones que conectan tecnología y datos</h2>
+        </div>
+        <p>Cada tarjeta usa una fotografía real de la Patagonia chilena, sin textos ni interfaces incrustadas.</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <img src="assets/img/torres-del-paine.jpg" alt="Torres del Paine y lago Pehoé">
+          <div class="project-content">
+            <h3>Plataformas de encuestas sociales</h3>
+            <p>Sistemas integrales para levantamiento, seguimiento de terreno y análisis de resultados.</p>
+            <div class="project-tags"><span>.NET</span><span>SQL Server</span><span>Android</span></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <img src="assets/img/glaciares-patagonia.jpg" alt="Glaciares reales del Parque Nacional Patagonia, Chile">
+          <div class="project-content">
+            <h3>Clasificación automática</h3>
+            <p>Modelos de machine learning para apoyar la codificación y clasificación de respuestas.</p>
+            <div class="project-tags"><span>Python</span><span>Machine Learning</span><span>Scikit-learn</span></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <img src="assets/img/glaciar-grey.jpg" alt="Glaciar Grey en Torres del Paine, Patagonia chilena">
+          <div class="project-content">
+            <h3>Inteligencia de negocios</h3>
+            <p>Indicadores, reportes y tableros para transformar datos operacionales en decisiones.</p>
+            <div class="project-tags"><span>Power BI</span><span>SQL</span><span>ETL</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="formacion">
+    <div class="container">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow">FORMACIÓN</p>
+          <h2>Educación y certificaciones</h2>
+        </div>
+      </div>
+
+      <div class="education-grid">
+        <article class="education-card accent reveal">
+          <p class="education-year">2023</p>
+          <h3>Machine Learning: Tecnología en la toma de Decisiones</h3>
+          <p>MIT Professional Education</p>
+        </article>
+
+        <article class="education-card reveal">
+          <p class="education-year">2024</p>
+          <h3>Diplomado en Estadística, mención Métodos Estadísticos</h3>
+          <p>Pontificia Universidad Católica de Chile</p>
+        </article>
+
+        <article class="education-card reveal">
+          <p class="education-year">2021</p>
+          <h3>Postítulo de Ciencia e Ingeniería de Datos</h3>
+          <p>Universidad de Chile</p>
+        </article>
+
+        <article class="education-card reveal">
+          <p class="education-year">2018</p>
+          <h3>Postítulo en Ingeniería de Software</h3>
+          <p>Universidad de Chile</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contacto">
+    <div class="contact-backdrop"></div>
+    <div class="container contact-grid">
+      <div class="reveal">
+        <p class="eyebrow">CONTACTO</p>
+        <h2>¿Tienes un proyecto en mente?</h2>
+        <p>Conversemos sobre cómo transformar una necesidad en una solución tecnológica clara y útil.</p>
+        <a class="button button-primary" href="mailto:Freddie.lagos@gmail.com">Escríbeme →</a>
+      </div>
+
+      <div class="contact-card reveal">
+        <a href="mailto:Freddie.lagos@gmail.com"><span>Correo</span>Freddie.lagos@gmail.com</a>
+        <a href="tel:+56966160057"><span>Teléfono</span>+56 9 6616 0057</a>
+        <div><span>Ubicación</span>Santiago, Chile</div>
+        <a href="https://onx.la/ef815" target="_blank" rel="noopener"><span>LinkedIn</span>Ver perfil profesional</a>
+      </div>
+    </div>
+  </section>
 </main>
 
-<footer><div class="container">© <span data-year></span> Freddie Lagos Navarrete · Diseñado con tecnología y propósito.</div></footer>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© <span data-year></span> Freddie Lagos Navarrete</span>
+    <a href="creditos.html">Créditos fotográficos</a>
+  </div>
+</footer>
+
 <script src="js/main.js"></script>
 </body>
 </html>
