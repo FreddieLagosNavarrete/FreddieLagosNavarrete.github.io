@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700">
+<defs>
+  <radialGradient id="sky" cx=".55" cy=".35" r=".8"><stop offset="0" stop-color="#183b63"/><stop offset="1" stop-color="#040a12"/></radialGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1200" height="700" fill="url(#sky)"/>
+<g fill="#07111d" opacity=".95">
+  <path d="M0 520L180 390l120 95 130-170 95 145 140-210 145 200 145-120 245 190v180H0z"/>
+</g>
+<g transform="translate(615 255) rotate(-7)" filter="url(#glow)">
+  <path fill="#020307" d="M0 88C-155 45-300 5-505 28c135 58 225 102 329 154-116 12-217 30-310 63 177 11 318 0 453-20l17 118h72l19-119c143 30 286 38 449 13-101-25-203-42-312-56 106-44 207-92 328-152-205-24-363 17-515 61z"/>
+  <ellipse cx="27" cy="146" rx="62" ry="88" fill="#17191d"/>
+  <circle cx="50" cy="87" r="35" fill="#393b40"/>
+  <path fill="#f2f2e8" d="M16 113c21-16 52-19 76-3l-10 25c-22-13-40-12-58 1z"/>
+  <path fill="#ba7b35" d="M79 88l48 15-49 18z"/>
+  <circle cx="58" cy="80" r="5" fill="#d6f1ff"/>
+</g>
+<circle cx="600" cy="170" r="3" fill="#38a7ff"/>
+<circle cx="600" cy="170" r="55" fill="none" stroke="#38a7ff" stroke-opacity=".25"/>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600">
+<defs>
+  <filter id="shadow"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-opacity=".35"/></filter>
+  <linearGradient id="wave" x1="0" x2="1"><stop offset="0" stop-color="#fff"/><stop offset=".5" stop-color="#f4f7fb"/><stop offset="1" stop-color="#fff"/></linearGradient>
+</defs>
+<g filter="url(#shadow)">
+  <path fill="url(#wave)" d="M40 60 C250 10 450 110 860 45 L860 315 C560 370 300 250 40 325 Z"/>
+  <path fill="#d52b1e" d="M40 325 C300 250 560 370 860 315 L860 555 C550 610 320 500 40 565 Z"/>
+  <path fill="#0039a6" d="M40 60 C145 36 250 40 330 58 L330 312 C220 285 125 290 40 325 Z"/>
+  <path fill="#fff" d="M185 110l21 64h67l-54 39 21 64-55-40-54 40 21-64-54-39h67z"/>
+</g>
+</svg>

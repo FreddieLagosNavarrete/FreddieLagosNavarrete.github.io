@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+<defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#071829"/><stop offset=".55" stop-color="#1b4a70"/><stop offset="1" stop-color="#f39b5c"/></linearGradient>
+  <linearGradient id="lake" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#174f79"/><stop offset="1" stop-color="#03131f"/></linearGradient>
+  <linearGradient id="snow" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#aac3d9"/></linearGradient>
+</defs>
+<rect width="1600" height="900" fill="url(#sky)"/>
+<circle cx="1270" cy="190" r="90" fill="#ffd2a4" opacity=".7"/>
+<g opacity=".95">
+  <path fill="#0b1b28" d="M0 615l235-225 160 125 245-350 180 290 225-350 210 340 165-220 180 255v420H0z"/>
+  <path fill="url(#snow)" d="M485 380l155-215 86 140-55-23-35 62-50-39zM890 340l155-235 100 162-64-31-42 66-54-42zM1195 345l60-120 78 121-56-22-25 39z"/>
+</g>
+<path fill="url(#lake)" d="M0 610c260-50 480-25 720 10 300 45 570 5 880-40v320H0z"/>
+<path fill="none" stroke="#6dc8ff" stroke-opacity=".35" stroke-width="6" d="M0 675c260-50 480-25 720 10 300 45 570 5 880-40"/>
+<g fill="#031018">
+  <path d="M0 730c200-60 350-80 570-20-210 38-350 72-570 110z"/>
+  <path d="M930 735c220-55 430-50 670 25v140H930z"/>
+</g>
+</svg>
