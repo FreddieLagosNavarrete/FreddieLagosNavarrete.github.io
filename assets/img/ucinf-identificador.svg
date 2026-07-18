@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 220">
+<rect width="520" height="220" rx="28" fill="#ffffff"/>
+<rect x="26" y="26" width="168" height="168" rx="24" fill="#112b58"/>
+<path d="M64 68h92v21H64zm0 34h92v21H64zm0 34h58v21H64z" fill="#fff"/>
+<text x="225" y="103" font-family="Arial, sans-serif" font-weight="800" font-size="48" fill="#112b58">UCINF</text>
+<text x="225" y="142" font-family="Arial, sans-serif" font-size="20" fill="#52627a">Universidad de Ciencias</text>
+<text x="225" y="171" font-family="Arial, sans-serif" font-size="20" fill="#52627a">de la Informática</text>
+</svg>
