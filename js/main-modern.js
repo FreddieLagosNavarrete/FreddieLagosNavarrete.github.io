@@ -1,0 +1,36 @@
+
+const menuButton=document.querySelector('.menu-button');const nav=document.querySelector('.main-nav');
+if(menuButton&&nav){menuButton.addEventListener('click',()=>{const open=nav.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(open));});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menuButton.setAttribute('aria-expanded','false');}));}
+const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target);}}),{threshold:.1});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+const year=document.querySelector('[data-year]');if(year)year.textContent=new Date().getFullYear();
+const filters=document.querySelectorAll('.filter');const credentials=document.querySelectorAll('.credential-card');filters.forEach(btn=>btn.addEventListener('click',()=>{filters.forEach(b=>b.classList.remove('active'));btn.classList.add('active');const value=btn.dataset.filter;credentials.forEach(card=>card.classList.toggle('hidden',value!=='all'&&card.dataset.category!==value));}));
+const dialog=document.getElementById('documentDialog');const dialogTitle=document.getElementById('dialogTitle');const dialogImage=document.getElementById('dialogImage');const dialogPdf=document.getElementById('dialogPdf');
+function openDocument(button){dialogTitle.textContent=button.dataset.title;dialogImage.src=button.dataset.image;dialogImage.alt='Vista previa de '+button.dataset.title;dialogPdf.href=button.dataset.pdf;if(typeof dialog.showModal==='function')dialog.showModal();}
+document.querySelectorAll('.credential-preview,.credential-open').forEach(button=>button.addEventListener('click',()=>openDocument(button)));document.querySelector('.dialog-close')?.addEventListener('click',()=>dialog.close());dialog?.addEventListener('click',e=>{if(e.target===dialog)dialog.close();});document.addEventListener('keydown',e=>{if(e.key==='Escape'&&dialog?.open)dialog.close();});
+
+
+// Resalta la sección visible en el menú.
+const trackedLinks = [...document.querySelectorAll('.main-nav a[href^="#"]')]
+  .filter(link => link.getAttribute('href') !== '#documentos');
+const trackedSections = trackedLinks
+  .map(link => document.querySelector(link.getAttribute('href')))
+  .filter(Boolean);
+
+const sectionObserver = new IntersectionObserver(entries => {
+  const visible = entries
+    .filter(entry => entry.isIntersecting)
+    .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+  if (!visible) return;
+  trackedLinks.forEach(link => {
+    link.classList.toggle(
+      'active',
+      link.getAttribute('href') === `#${visible.target.id}`
+    );
+  });
+}, {
+  rootMargin: '-30% 0px -58% 0px',
+  threshold: [0.05, 0.2, 0.45]
+});
+
+trackedSections.forEach(section => sectionObserver.observe(section));

@@ -1,16 +1,15 @@
-# Portafolio Freddie Lagos - versión profesional 2026
+# Portafolio Freddie Lagos — Moderno 2026
 
-Incluye:
-- Imágenes reales de la Patagonia chilena y cóndor andino.
-- Textos profesionales revisados y basados en el CV y documentos académicos.
-- Galería filtrable de diplomas y certificados.
-- Vistas previas y documentos públicos descargables.
-- Protección de RUT, códigos de validación y QR sensibles en los documentos publicados.
-- Resultado de inglés B2 según diagnóstico MCER 2026.
+Cambios principales:
+- Bandera chilena compacta y con tamaño fijo.
+- Menú rediseñado con navegación activa.
+- Documentos separados como acción propia.
+- Paleta moderna en azul eléctrico, cian y violeta.
+- Nombres nuevos para CSS y JavaScript para evitar caché.
 
-## Publicar en GitHub Pages
-1. Descomprime el ZIP.
-2. Sube todos los archivos y carpetas a la raíz de `FreddieLagosNavarrete.github.io`.
-3. Comprueba que `index.html` quede en la raíz.
-4. GitHub Pages: rama `main`, carpeta `/(root)`.
-5. Después del despliegue presiona Ctrl+F5 para actualizar la caché.
+## Publicación
+1. Elimina los archivos anteriores del repositorio.
+2. Sube todo el contenido de este ZIP a la raíz.
+3. Verifica que `index.html` esté en la raíz.
+4. Espera el despliegue de GitHub Pages.
+5. Actualiza con Ctrl + F5.

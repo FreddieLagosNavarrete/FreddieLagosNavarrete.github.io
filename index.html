@@ -11,21 +11,41 @@
   <meta property="og:image" content="assets/img/hero-condor.jpg">
   <title>Freddie Lagos | Ingeniería de Software y Datos</title>
   <link rel="preload" as="image" href="assets/img/hero-condor.jpg">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles-modern.css?v=20260717">
 </head>
 <body>
 <header class="site-header">
   <div class="container nav-wrap">
     <a class="brand" href="#inicio" aria-label="Ir al inicio">
       <span class="brand-icon">FL</span>
-      <span class="brand-copy"><strong>Freddie Lagos</strong><small>Software · Datos · Innovación</small></span>
+      <span class="brand-copy">
+        <strong>Freddie Lagos</strong>
+        <small>Ingeniería de Software · Datos · IA</small>
+      </span>
     </a>
-    <button class="menu-button" type="button" aria-label="Abrir menú" aria-expanded="false">☰</button>
+
+    <button class="menu-button" type="button" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
     <nav class="main-nav" aria-label="Navegación principal">
-      <a href="#perfil">Perfil</a><a href="#experiencia">Experiencia</a><a href="#especialidades">Especialidades</a>
-      <a href="#proyectos">Proyectos</a><a href="#credenciales">Credenciales</a><a href="#contacto">Contacto</a>
+      <a href="#perfil">Perfil</a>
+      <a href="#experiencia">Trayectoria</a>
+      <a href="#especialidades">Especialidades</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+      <a class="mobile-documents-link" href="#documentos">Documentos</a>
     </nav>
-    <a class="button button-primary nav-cv" href="assets/CV-Freddie-Lagos.pdf" download>Descargar CV ↓</a>
+
+    <div class="nav-actions">
+      <a class="nav-documents" href="#documentos">
+        <span class="nav-action-icon">▤</span>
+        <span>Documentos</span>
+      </a>
+      <a class="button button-primary nav-cv" href="assets/CV-Freddie-Lagos.pdf" download>
+        Descargar CV <span aria-hidden="true">↓</span>
+      </a>
+    </div>
   </div>
 </header>
 
@@ -34,11 +54,11 @@
   <div class="hero-overlay"></div>
   <div class="container hero-inner">
     <div class="hero-copy reveal">
-      <div class="country-pill"><img src="assets/img/chile.svg" alt="Bandera de Chile"><span>Ingeniero de software desde Chile</span></div>
+      <div class="country-pill"><img src="assets/img/chile.svg?v=20260717" alt="Bandera de Chile"><span>Ingeniero de software desde Chile</span></div>
       <p class="eyebrow">DESARROLLO · DATOS · INTELIGENCIA ARTIFICIAL</p>
       <h1>Construyo tecnología que convierte <span>datos en decisiones.</span></h1>
       <p class="hero-lead">Más de 19 años diseñando e implementando soluciones web, móviles y analíticas para investigación social, educación, servicios públicos y operación empresarial.</p>
-      <div class="hero-actions"><a class="button button-primary" href="#proyectos">Conocer mi trabajo →</a><a class="button button-secondary" href="#credenciales">Ver credenciales</a></div>
+      <div class="hero-actions"><a class="button button-primary" href="#proyectos">Conocer mi trabajo →</a><a class="button button-secondary" href="#documentos">Explorar documentos</a></div>
       <div class="hero-facts">
         <div><strong>19+</strong><span>años de trayectoria</span></div>
         <div><strong>4</strong><span>instituciones destacadas</span></div>
@@ -110,9 +130,9 @@
   </div>
 </section>
 
-<section class="section" id="credenciales">
+<section class="section" id="documentos">
   <div class="container">
-    <div class="section-heading reveal"><div><p class="eyebrow">FORMACIÓN VERIFICABLE</p><h2>Credenciales que respaldan mi especialización</h2></div><p>Diplomas, certificados y resultados académicos disponibles en versiones públicas. Los identificadores personales y códigos de validación sensibles fueron protegidos.</p></div>
+    <div class="section-heading reveal"><div><p class="eyebrow">BIBLIOTECA PROFESIONAL</p><h2>Documentos, diplomas y certificaciones</h2></div><p>Una biblioteca ordenada de diplomas, certificados y respaldos académicos. Cada documento puede ampliarse o abrirse de forma independiente.</p></div>
     <div class="credential-filters reveal" role="group" aria-label="Filtrar credenciales">
       <button class="filter active" data-filter="all">Todas</button><button class="filter" data-filter="software">Software</button><button class="filter" data-filter="datos">Datos y estadística</button><button class="filter" data-filter="ia">IA</button><button class="filter" data-filter="negocios">Negocios</button><button class="filter" data-filter="infraestructura">Infraestructura</button><button class="filter" data-filter="idiomas">Idiomas</button>
     </div>
@@ -281,5 +301,5 @@
   <div class="dialog-footer"><a id="dialogPdf" class="button button-primary" href="#" target="_blank" rel="noopener">Abrir documento completo ↗</a></div>
 </dialog>
 
-<script src="js/main.js"></script>
+<script src="js/main-modern.js?v=20260717"></script>
 </body></html>
