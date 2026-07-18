@@ -603,3 +603,58 @@ body{
 @media(max-width:820px){
   .credential-card-featured{grid-column:span 1}
 }
+
+
+/* Mayor protagonismo para datos, BI y analítica */
+.hero-facts{
+  grid-template-columns:repeat(5,minmax(0,1fr));
+}
+
+.hero-facts > div{
+  position:relative;
+  overflow:hidden;
+}
+
+.hero-facts > div:nth-child(4){
+  border-color:rgba(55,228,207,.34);
+  background:
+    radial-gradient(circle at 100% 0%,rgba(55,228,207,.14),transparent 45%),
+    linear-gradient(165deg,rgba(16,30,49,.96),rgba(7,12,25,.96));
+}
+
+.hero-facts > div:nth-child(4)::after{
+  content:"";
+  position:absolute;
+  right:-24px;
+  bottom:-28px;
+  width:85px;
+  height:85px;
+  border-radius:50%;
+  background:rgba(55,228,207,.07);
+}
+
+.hero-facts > div:nth-child(4) strong{
+  color:#37e4cf;
+}
+
+.hero-facts > div:nth-child(4) span{
+  max-width:150px;
+}
+
+@media(max-width:1100px){
+  .hero-facts{
+    grid-template-columns:repeat(3,minmax(0,1fr));
+  }
+}
+
+@media(max-width:700px){
+  .hero-facts{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+
+@media(max-width:420px){
+  .hero-facts{
+    grid-template-columns:1fr;
+  }
+}

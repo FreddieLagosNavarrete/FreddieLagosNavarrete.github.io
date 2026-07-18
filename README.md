@@ -15,3 +15,13 @@ Cambios:
 3. Verifica que `index.html` quede en la raíz.
 4. Espera el despliegue.
 5. Actualiza con Ctrl + F5.
+
+
+## Ajuste de presentación
+El texto principal ahora incorpora explícitamente ciencia de datos, inteligencia de negocios, estadística y machine learning.
+
+
+## Enfoque adicional en datos
+- Nueva tarjeta destacada: Datos + BI.
+- Incluye ciencia de datos, estadística, machine learning e inteligencia de negocios.
+- Grilla adaptada para cinco indicadores y dispositivos móviles.
